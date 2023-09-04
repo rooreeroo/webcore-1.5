@@ -37,6 +37,9 @@ body {
     .swiper {
         height: 140px;
     }
+    .swiper-pagination-bullet-active {
+        --swiper-theme-color: #7e7e82;
+    }
 
     .slider__header {
         background: linear-gradient(45deg, #F8F8F8 0%, #FFFFFF 98.61%);
