@@ -1,0 +1,19 @@
+@media (min-width: 320px) {
+    .block__header {
+        background: linear-gradient(45deg, #F8F8F8 0%, #FFFFFF 98.61%);
+
+        border-top: 2px solid #D9FFF5;
+
+    }
+
+    .block__header--title {
+        margin: 0;
+        padding: 16px 3%;
+        font-size: 16px;
+        line-height: 24px;
+        color: #7E7E82;
+
+        text-align: left;
+
+    }
+}

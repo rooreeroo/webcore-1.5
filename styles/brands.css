@@ -1,0 +1,117 @@
+@media (min-width: 320px) {
+
+    .swiper-pagination-bullet-active {
+        --swiper-theme-color: #7e7e82;
+    }
+
+
+    .brands__buttons {
+        display: none;
+    }
+
+    .brands__list {
+        height: 115px;
+        margin-top: 3.2%;
+    }
+    .brands__list__wrapper {
+        padding: 0;
+        margin-left: 3%;
+    }
+    .brands__list__button {
+        height: 70px;
+        width: 240px;
+        border-radius: 5px;
+        background-color: white;
+        border: 1px solid #EAEAEA;
+        display: flex;
+    }
+    .brands__list__button:hover {
+        cursor: pointer;
+        border: 1px solid #ea54bb;
+    }
+    .brands__list__button img {
+        margin: auto 10px;
+    }
+    .brands__list__button img:last-child {
+        margin-left: auto;
+    }
+
+
+    .brands__fade {
+        position: absolute;
+        width: 24px;
+        height: 81px;
+        top: 0;
+        right: 0;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+        z-index: 10;
+
+    }
+}
+@media (min-width: 768px) {
+    .brands__list {
+        height: auto;
+    }
+    .brands__list__fade {
+        display: none;
+    }
+
+    .brands__list__wrapper {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: 1fr 1fr;
+
+        grid-auto-rows: 90px;
+        overflow-y: hidden;
+        row-gap: 0;
+    }
+    .autoRows {
+        grid-auto-rows: 0;
+    }
+    .brands__buttons {
+        display: block;
+        margin: 10px;
+    }
+    .brands__buttons--button{
+        content: 'Показать все';
+        display: flex;
+        cursor: pointer;
+        background: none;
+        border: none;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+    }
+    .brands__buttons--button:hover {
+        text-decoration: underline;
+    }
+    .brands__buttons--img {
+        transform: rotate(0deg);
+    }
+    .brands__list__button {
+        margin-top: 20px;
+    }
+    .rotate {
+        transform: rotate(180deg);
+    }
+    .visible {
+        display: flex;
+    }
+}
+@media (min-width: 980px) {
+    .brands__wrapper {
+
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    }
+}
+@media (min-width: 1440px) {
+    .brands__wrapper {
+
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+
+    }
+}
