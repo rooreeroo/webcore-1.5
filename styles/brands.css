@@ -71,10 +71,10 @@
     }
     .brands__buttons {
         display: block;
-        margin: 10px;
+        margin: 10px 2.5%;
     }
     .brands__buttons--button{
-        content: 'Показать все';
+        padding: 0;
         display: flex;
         cursor: pointer;
         background: none;
@@ -101,17 +101,16 @@
         display: flex;
     }
 }
-@media (min-width: 980px) {
-    .brands__wrapper {
-
+@media (min-width: 1080px) {
+    .brands__list__wrapper {
         grid-template-columns: repeat(4, minmax(0, 1fr));
-
+    }
+    .brands__buttons {
+        margin: 10px 3%;
     }
 }
 @media (min-width: 1440px) {
-    .brands__wrapper {
-
+    .brands__list__wrapper {
         grid-template-columns: repeat(5, minmax(0, 1fr));
-
     }
 }
