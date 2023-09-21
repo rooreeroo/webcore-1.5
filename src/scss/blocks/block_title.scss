@@ -1,0 +1,14 @@
+@media (min-width: 320px) {
+    .block__header {
+        background: linear-gradient(45deg, $background-grey 0%, $background-white 98.61%);
+        border-top: 2px solid $border-green;
+        &--title {
+            margin: 0;
+            padding: 16px 3%;
+            font-size: 16px;
+            line-height: 24px;
+            color: $active-link;
+            text-align: left;
+        }
+    }
+}

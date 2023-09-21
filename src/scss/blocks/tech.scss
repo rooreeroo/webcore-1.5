@@ -1,0 +1,127 @@
+.tech {
+  padding-top: 20px;
+  min-width: 320px;
+  min-height: 308px;
+  background: $background-grey;
+  &__buttons {
+    display: none;
+  }
+  &__list {
+    height: 220px;
+    padding-bottom: 20px;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 210px;
+      top: 0;
+      right: 0;
+      background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+      z-index: 10;
+    }
+  }
+  &__wrapper {
+    padding: 0;
+    margin-left: 3%;
+  }
+  &__card {
+    height: 160px;
+    width: 240px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    &:hover {
+      cursor: pointer;
+      border: 1px solid $pink;
+    }
+    & img {
+      position: absolute;
+      right: 14px;
+      bottom: 16px;
+    }
+    & img {
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+  }
+  &__title {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    color: $main-text-color;
+  }
+  &__img {
+    transition: 0.6s;
+    transform: rotate(180deg);
+    &--rotate {
+      transform: rotate(0);
+    }
+  }
+
+
+}
+@media (min-width: 768px) {
+  .tech {
+    &__list {
+      height: auto;
+      padding-bottom: 0;
+      &:before {
+        display: none;
+      }
+    }
+    &__wrapper {
+      display: grid;
+      justify-items: center;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: 1fr;
+      grid-auto-rows: 0;
+      overflow-y: hidden;
+      row-gap: 0;
+      &--autoRows {
+        grid-auto-rows: 180px;
+      }
+    }
+    &__buttons {
+      display: block;
+      margin: 10px 2.5%;
+    }
+    &__button{
+      padding: 0;
+      display: flex;
+      cursor: pointer;
+      background: none;
+      border: none;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: left;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+@media (min-width: 1080px) {
+  .tech__wrapper {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .tech__buttons {
+    margin: 10px 3%;
+  }
+}
+@media (min-width: 1620px) {
+  .tech__wrapper {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+

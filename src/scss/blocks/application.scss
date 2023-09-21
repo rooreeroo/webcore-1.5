@@ -1,0 +1,44 @@
+.application {
+  min-width: 288px;
+  margin: 16px 3% 0;
+  color: $main-text-color;
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+  &__button {
+    cursor: pointer;
+    width: 75%;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-top: 25px;
+    & p {
+      padding: 0;
+      word-wrap: break-word;
+    }
+    & span {
+      word-wrap: normal;
+    }
+    &:hover {
+      text-decoration: underline;
+      color: $hover-link;
+    }
+  }
+  &__arrow {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 416px) {
+  .application {
+    &__button {
+      width: 100%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .application {
+    width: 57%;
+  }
+}

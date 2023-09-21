@@ -1,0 +1,52 @@
+@import 'base/fonts';
+$main-text-color: #1b1c21;
+$pink: #ff3e79;
+$light-grey: #eaeaea;
+$grey: #7e7e82;
+$green: #41f6d7;
+$background-grey: #f8f8f8;
+$active-link: #7E7E82;
+$hover-link: #636363;
+$background-white: #ffffff;
+$border-green: #D9FFF5;
+$hover-pink: #D23A69;
+
+html {
+  box-sizing: border-box;
+
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  font-family: "TT Lakes", serif;
+  position: relative;
+  color: $main-text-color;
+  overflow-x: hidden;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 1366px) {
+  .container {
+    padding-left: 320px;
+  }
+}
+@import 'blocks/modal_feedback';
+@import 'blocks/modal_call';
+@import 'blocks/application';
+@import 'blocks/prices';
+@import 'blocks/block_title';
+@import 'blocks/brands';
+@import 'blocks/tech';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/menu';
+@import 'blocks/services';
+@import 'blocks/swiper';

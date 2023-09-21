@@ -1,0 +1,145 @@
+.prices {
+  padding-top: 20px;
+  min-width: 320px;
+  min-height: 308px;
+  background: $background-grey;
+  &__buttons {
+    display: none;
+  }
+  &__list {
+    height: 260px;
+    padding-bottom: 20px;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 210px;
+      top: 0;
+      right: 0;
+      background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+      z-index: 10;
+    }
+  }
+  &__wrapper {
+    padding: 0;
+    margin-left: 30px;
+  }
+  &__card {
+    height: 190px;
+    width: 240px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    padding: 4px;
+    &:hover {
+      cursor: pointer;
+      border-bottom: 1px solid $pink;
+      font-weight: 500;
+    }
+    &--cells {
+      display: none;
+    }
+  }
+  &__title {
+    font-size: 14px;
+    line-height: 16px;
+    color: $grey;
+    margin-bottom: 0;
+    padding-left: 11px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 11px;
+    color: $main-text-color;
+    margin: 0;
+  }
+  &__button {
+    cursor: pointer;
+    position: absolute;
+    right: 14px;
+    bottom: 16px;
+    border: none;
+    color: $background-white;
+    background-color: $pink;
+    padding: 5px 10px;
+    border-radius: 30px;
+    &:hover {
+      background-color: $hover-pink;
+    }
+  }
+  &__offer {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+
+  }
+  &__arrow {
+    padding-left: 10px;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .prices {
+    &__list {
+      height: auto;
+      padding-bottom: 20px;
+      &:before {
+        display: none;
+      }
+    }
+    &__wrapper {
+      margin-right: 3%;
+      background-color: #fff;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 5px;
+
+    }
+    &__card {
+      width: 100%;
+      height: 65px;
+      border: none;
+      display: grid;
+      grid-template-columns: 3fr 1fr 1fr 1fr;
+      margin-top: 0;
+      border-bottom: 2px solid $background-grey;
+      border-radius: 0;
+      &--cells {
+        margin-top: 10px;
+        margin-left: 3%;
+        margin-right: 3%;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: grid;
+        width: 94%;
+        height: 65px;
+        border: none;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        background-color: $background-grey;
+      }
+    }
+    &__title {
+      display: none;
+      &--cell {
+        padding: 0;
+        margin: auto auto auto 0;
+        color: $grey;
+      }
+    }
+    &__text {
+      padding: 0;
+      margin: auto auto auto 0;
+    }
+    &__button {
+      position: absolute;
+      right: 0;
+      bottom: 16px;
+    }
+  }
+}
